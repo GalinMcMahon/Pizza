@@ -24,7 +24,7 @@ This website will allow complete customization in the ordering of a pizza.  Ther
 
 ## Known Bugs
 
-No known bugs.
+Nothing works.  Hope to redo next week.
 
 ## Support and contact details
 
