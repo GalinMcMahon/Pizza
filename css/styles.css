@@ -1,3 +1,63 @@
 h1 {
   text-align: center;
 }
+
+.sidebar {
+  background-color: yellow;
+}
+
+.panel {
+  background-color: brown;
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#bigness {
+  width: 100px;
+}
+
+#toppings, #size {
+  border-width: 3px;
+  border-color: brown;
+  border-style: ridge;
+  border-radius: 10px;
+  padding-left: 10%;
+  padding-right: 0px;
+  max-width: : 500px;
+  margin-bottom: 3px;
+  background-color: brown;
+}
+
+#toppings, #size, #output, #price {
+  font-size: 18px;
+  font-family: cursive;
+}
+
+h2 {
+  text-align: center;
+}
+
+#size {
+  margin-left: auto;
+  align-items: center;
+}
+
+#submit {
+  margin: 5px;
+}
+
+
+h3 {
+  padding: 3px;
+}
+
+h4 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#output {
+  font-size: 40px;
+}

@@ -14,46 +14,45 @@
       <h1>Pizza</h1>
     </div>
     <div class="container">
-      <div class="col-lg-8">
+      <div class="col-lg-3">
         <form id="toppings">
           <h2>TOPPINGS</h2>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Pepperoni">Pepperoni</label>
+            <label><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Sausage">Sausage</label>
+            <label><input type="checkbox" name="toppings" value="Sausage">Sausage</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Beef">Beef</label>
+            <label><input type="checkbox" name="toppings" value="Beef">Beef</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Canadian Bacon">Canadian Bacon</label>
+            <label><input type="checkbox" name="toppings" value="Canadian Bacon">Canadian Bacon</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Breakfast Bacon">Breakfast Bacon</label>
+            <label><input type="checkbox" name="toppings" value="Breakfast Bacon">Breakfast Bacon</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Chorizo">Chorizo</label>
+            <label><input type="checkbox" name="toppings" value="Chorizo">Chorizo</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Pineapple">Pineapple</label>
+            <label><input type="checkbox" name="toppings" value="Pineapple">Pineapple</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Mushrooms">Mushrooms</label>
+            <label><input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Olives">Olives</label>
+            <label><input type="checkbox" name="toppings" value="Olives">Olives</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="Artichoke Hearts">Artichoke Hearts</label>
+            <label><input type="checkbox" name="toppings" value="Artichoke Hearts">Artichoke Hearts</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="TomFresh">Tomatoes: fresh</label>
+            <label><input type="checkbox" name="toppings" value="TomFresh">Tomatoes: fresh</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="toppings[]" value="TomCook">Tomatoes: cooked</label>
+            <label><input type="checkbox" name="toppings" value="TomCook">Tomatoes: cooked</label>
           </div>
-          <!-- <button type="submit" name="button" id="submit">Add Toppings</button> -->
         </form>
         <form id="size">
           <h2>SIZE</h2>
@@ -63,39 +62,18 @@
             <option value="Large">Large</option>
             <option value="Family">Family</option>
           </select>
-          <button type="submit" name="button" onclick="placeOrder();" id="submit">place order</button>
+          <button type="submit" name="button" id="submit">place order</button>
         </form>
-
-
-            <!-- <div class="radio">
-              <label>
-                <input type="radio" name="bigness" value="small" checked>
-                Small
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="bigness" value="medium">
-                Medium
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="bigness" value="large">
-                Large
-              </label>
-            </div> -->
-
-
-
-
-
       </div>
-      <div class="col-lg-4">
-        <div class="sidebar" id="sidebar-wrapper">
-          <div id="output"></div>
+      <div class="col-lg-2">
+        <div class="panel">
+          <div id="output">
+            <h3>Create your pizza on the left</h3>
+            <h4 id="Price"></h4>
+          </div>
         </div>
       </div>
+      <!-- <div class=col-lg-7"></div> -->
     </div>
   </body>
 </html>
