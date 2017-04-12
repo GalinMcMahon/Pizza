@@ -7,45 +7,58 @@ function Pizza(bigness, toppings) {
 }
                   // OUR PROTOTYPE:
 
-var sizeCost = 0;
+// var sizeCost = 0;
 
-Pizza.prototype.cost = (function(i) {
-  for(var i=0; i<=topps.length; i++) {
-    var toppings = i*1.5;
-    return toppings;
+Pizza.prototype.cost = (function() {
+  var totalCost = 0;
+
+  for(var i=0; i<this.toppings.length; i++) {
+    if (this.toppings[i].checked)
+      totalCost = totalCost + 1.5;
   }
-  var sizeCost = (function() {
-    if (bigness === Small) {
-      var sizeCost = 8;
-    } else if (bigness === Medium) {
-      var sizeCost = 10;
-    } else if (bigness === Large) {
-      var sizeCost = 12;
-    } else if (bigness === Family) {
-      var sizeCost = 14;
-    } return sizeCost;
-  });
+
+    if (this.bigness === "Small") {
+      totalCost = totalCost +  8;
+    } else if (this.bigness  === "Medium") {
+      totalCost = totalCost + 10;
+    } else if (this.bigness  === "Large") {
+      totalCost = totalCost + 12;
+    } else if (this.bigness  === "Family") {
+      totalCost = totalCost + 14;
+    }
+
+    return totalCost;
 });
 
-var topps = [];
 
+function placeOrder() {
+    var bigness = document.getElementById('bigness').value;
+    var toppings = document.getElementsByName('toppings[]');
+
+    var myPizza = new Pizza(bigness, toppings);
+    var totalCost = myPizza.cost();
+
+    document.getElementById('output').innerHTML = "Total Cost: $" + totalCost;
+    //alert(totalCost);
+}
                               // UI LOGIC
 $(document).ready(function() {
-
-  $("form#toppings").submit(function(event) {
-    event.preventDefault();
-    $("input:checked").each(function(){
-      topps.push($(this).val());
-    });
-  });
-
-  $("form#size").submit(function(event) {
-      var bigness = $("#bigness").val();
-      console.log(bigness);
-      return bigness;
-  });
-
-  var chooseToppings = $("form#topps").val();
-  var newPizza = new Pizza("Large", "Pepperoni");
-  $("ul.sidebar-nav").append("<li>" + chooseToppings + "</li>");
+//
+event.preventDefault();
 });
+//   $("form#toppings").submit(function(event) {
+//     $("input:checked").each(function(){
+//       topps.push($(this).val());
+//     });
+//   });
+//
+//   $("form#size").submit(function(event) {
+//       var bigness = $("#bigness").val();
+//       console.log(bigness);
+//       return bigness;
+//   });
+//
+//   var chooseToppings = $("form#topps").val();
+//   var newPizza = new Pizza("Large", "Pepperoni");
+//   $("ul.sidebar-nav").append("<li>" + chooseToppings + "</li>");
+// });

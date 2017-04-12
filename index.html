@@ -18,54 +18,54 @@
         <form id="toppings">
           <h2>TOPPINGS</h2>
           <div class="checkbox">
-            <label><input type="checkbox" value="Pepperoni">Pepperoni</label>
+            <label><input type="checkbox" name="toppings[]" value="Pepperoni">Pepperoni</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Sausage">Sausage</label>
+            <label><input type="checkbox" name="toppings[]" value="Sausage">Sausage</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Beef">Beef</label>
+            <label><input type="checkbox" name="toppings[]" value="Beef">Beef</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Canadian Bacon">Canadian Bacon</label>
+            <label><input type="checkbox" name="toppings[]" value="Canadian Bacon">Canadian Bacon</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Breakfast Bacon">Breakfast Bacon</label>
+            <label><input type="checkbox" name="toppings[]" value="Breakfast Bacon">Breakfast Bacon</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Chorizo">Chorizo</label>
+            <label><input type="checkbox" name="toppings[]" value="Chorizo">Chorizo</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Pineapple">Pineapple</label>
+            <label><input type="checkbox" name="toppings[]" value="Pineapple">Pineapple</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Mushrooms">Mushrooms</label>
+            <label><input type="checkbox" name="toppings[]" value="Mushrooms">Mushrooms</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Olives">Olives</label>
+            <label><input type="checkbox" name="toppings[]" value="Olives">Olives</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="Artichoke Hearts">Artichoke Hearts</label>
+            <label><input type="checkbox" name="toppings[]" value="Artichoke Hearts">Artichoke Hearts</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="TomFresh">Tomatoes: fresh</label>
+            <label><input type="checkbox" name="toppings[]" value="TomFresh">Tomatoes: fresh</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="TomCook">Tomatoes: cooked</label>
+            <label><input type="checkbox" name="toppings[]" value="TomCook">Tomatoes: cooked</label>
           </div>
-          <button type="submit" name="button" id="submit">Add Toppings</button>
+          <!-- <button type="submit" name="button" id="submit">Add Toppings</button> -->
         </form>
         <form id="size">
           <h2>SIZE</h2>
           <select class="form-control" id="bigness">
-            <option></option>
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Large</option>
             <option value="Family">Family</option>
           </select>
-          <button type="submit" name="button" id="submit">Select Size</button>
+          <button type="submit" name="button" onclick="placeOrder();" id="submit">place order</button>
         </form>
+
 
             <!-- <div class="radio">
               <label>
@@ -93,11 +93,7 @@
       </div>
       <div class="col-lg-4">
         <div class="sidebar" id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-              <li>"Pizza"</li>
-            </li>
-          </ul>
+          <div id="output"></div>
         </div>
       </div>
     </div>
